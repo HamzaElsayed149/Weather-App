@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></head>
+<body>
+   
+    <div class="home">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-4 bg-dark  ls-con text-center min-vh-100 d-flex  flex-column align-items-center position-relative" >
+
+                    <div class="search position-relative pt-4">
+                        <input type="search" class="input-group-text mb-5 ps-4 pe-2 rounded-2" placeholder="Search City" onkeypress="city(this.value)">
+                
+                    </div>
+                    <div class="content text-white position-relative" id="current">
+                        
+        
+                    </div>
+                    <div>
+                        <svg  class="position-absolute bottom-0 w-100 translate-middle-x start-50"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,213.3C384,224,480,192,576,192C672,192,768,224,864,202.7C960,181,1056,107,1152,101.3C1248,96,1344,160,1392,192L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                    </div>
+              
+                </div>
+                <div class="col-md-8 bg-light pt-5   min-vh-100  position-relative">
+                    <div class="content-LS">
+                        <h4 class="fs-2 pb-4 mb-5">Timeline</h4>
+                        <div class="row gy-4 justify-content-center " id="timeline">
+                          
+                        </div>
+                        <h4 class="fs-2 pb-4 mb-5">Today's Highlights</h4>
+                        <div class="row gy-4 justify-content-center m-auto " id="Highlights">
+
+                      
+                        </div>
+           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
